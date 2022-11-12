@@ -1,0 +1,158 @@
+:root {
+    --max-content-width: 1290px;
+    --color-0: #fff;
+    --color-1: #000;
+    --color-2: #e4e4e4;
+    --primaryFont: "Archivo";
+    --color-3: #656565;
+  }
+.products {
+    padding: 51px 14px;
+  }
+  
+  .heading__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product__heading{
+    font-size: 18px;
+    font-family: Archivo;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--color-1);
+  }
+  
+  .product__heading-span {
+    font-weight: 400;
+    color: var(--color-3);
+    font-family: Archivo;
+    font-size: 18px;
+  }
+
+  .productbtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .desktop__sort {
+    display: none;
+  }
+  
+  .product__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    list-style: none;
+  }
+
+  .product__list-Item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 660px;
+  }
+  
+  .product__list-Item + .product__list-Item {
+    margin-top: 32px;
+  }
+
+  .product__img-wrapper {
+    height: 502px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .product__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .product_cardbtn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .product__label {
+    display: block;
+    position: absolute;
+    font-family: Archivo;
+    top: 0;
+    left: 0;
+    padding: 8px 16px;
+    background-color: var(--color-0);
+  }
+  
+  .category {
+      color: var(--color-3);
+      font-size: 22px;
+      line-height: 24px;
+      font-family: Archivo;
+      margin-top: 8px;
+  }
+  
+  .title {
+     color: var(--color-1);
+     font-size: 34px;
+     line-height: 37px;
+     font-weight: 700;
+     margin-bottom: 9px;
+     margin-top: 8px;
+     font-family: Archivo;
+  }
+  
+  .price {
+      font-size: 29px;
+      color: var(--color-3);
+      font-family: Archivo;
+  
+  }
+
+  @media (min-width: 768px) {
+    .productbtn {
+      display: none;
+    }
+  
+    .desktop__sort {
+      display: flex;
+      align-items: center;
+    }
+  
+    .desktop__sort > span {
+      font-size: 22px;
+      padding-left: 7px;
+      padding-right: 15px;
+      font-family: Archivo;
+      color: #9b9b9b;
+    }
+  
+    .product__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .product__list-Item:nth-child(3n + 2) {
+      margin-right: 48px;
+      margin-left: 48px;
+    }
+
+
+
+  
+    .product__list-Item {
+      flex-shrink: 0;
+      margin-bottom: 32px;
+      max-width: calc(33.333% - 32px);
+    }
+  
+    .product__list-Item + .product__list-Item {
+      margin-top: 0px;
+      
+    }
+  }
+  

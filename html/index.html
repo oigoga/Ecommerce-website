@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/products.css">
+    <script type="text/javascript" src="../js/script.js" defer></script>
     <title>E-commerce</title>
   </head>
   <body>
@@ -24,6 +25,7 @@
         />
         <button class="navigation__cartBtn">
           <img src="../assets/shopping-cart.png" alt="cart" />
+          <span id="cartproduct__count" class="cartproduct__count">0</span>
         </button>
       </div>
     </nav>
@@ -86,7 +88,9 @@
     </section>
 
     <div class=" divider container"></div>
+    <select id="category">
 
+    </select>
     <section class="products">
       <div class="container">
         <div class="heading__wrapper">
@@ -96,7 +100,7 @@
               Premium Photos
           </span></h5>
 
-          <buttonm class="productbtn">
+          <button class="productbtn">
             <img src="../assets/Group.svg" alt="">
           </button>
 
@@ -110,99 +114,7 @@
           </div>
         </div>
 
-        <ul class="product__list">
-          
-            <li class="product__list-Item one"  >
-              <aside class="product__img-wrapper">
-                <div class="product__label">
-                  Best Seller
-                </div>
-                <img class="product__img" src="../assets/Rectangle 2.png" />
-                <button class="cartbtn product_cardbtn"> Add to cart</button>
-        
-              </aside>
-
-              <div>
-                <h4 class="category">People</h4>
-                <h2 class="title">Red Bench</h2>
-                <span class="price">$34.9</span>
-              </div>
-          </li>
-          <li class="product__list-Item two"> <aside class="product__img-wrapper">
-            <div class="product__label">
-              Best Seller
-            </div>
-            <img class="product__img" src="../assets/Rectangle 2.1.png" />
-            <button class="cartbtn product_cardbtn"> Add to cart</button>
-    
-          </aside>
-
-          <div>
-            <h4 class="category">People</h4>
-            <h2 class="title">Red Bench</h2>
-            <span class="price">$34.9</span>
-          </div></li>
-          <li class="product__list-Item three">
-            <aside class="product__img-wrapper">
-              <div class="product__label">
-                Best Seller
-              </div>
-              <img class="product__img" src="../assets/Rectangle 2.1.png" />
-              <button class="cartbtn product_cardbtn"> Add to cart</button>
-      
-            </aside>
-
-            <div>
-              <h4 class="category">People</h4>
-              <h2 class="title">Red Bench</h2>
-              <span class="price">$34.9</span>
-            </div>
-          </li>
-          <li class="product__list-Item four">
-            <aside class="product__img-wrapper">
-              <div class="product__label">
-                Best Seller
-              </div>
-              <img class="product__img" src="../assets/Rectangle 2.4.png" />
-              <button class="cartbtn product_cardbtn"> Add to cart</button>
-  
-            </aside>
-
-            <div>
-              <h4 class="category">People</h4>
-              <h2 class="title">Red Bench</h2>
-              <span class="price">$34.9</span>
-            </div>
-          </li>
-          <li class="product__list-Item five"> <aside class="product__img-wrapper">
-            <div class="product__label">
-              Best Seller
-            </div>
-            <img class="product__img" src="../assets/Rectangle 2.5.png" />
-            <button class="cartbtn product_cardbtn"> Add to cart</button>
-    
-          </aside>
-
-          <div>
-            <h4 class="category">People</h4>
-            <h2 class="title">Red Bench</h2>
-            <span class="price">$34.9</span>
-          </div></li>
-          <li class="product__list-Item six"> <aside class="product__img-wrapper">
-            <div class="product__label">
-              Best Seller
-            </div>
-            <img class="product__img" src="../assets/Rectangle 2.5.png" />
-            <button class="cartbtn product_cardbtn"> Add to cart</button>
-    
-          </aside>
-
-          <div>
-            <h4 class="category">People</h4>
-            <h2 class="title">Red Bench</h2>
-            <span class="price">$34.9</span>
-          </div></li>
-        </ul>
+        <ul id="products" class="product__list"></ul>
       </div>
     </section>
   </body>
